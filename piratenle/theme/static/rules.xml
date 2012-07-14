@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- The default theme, used for standard Plone web pages -->
+    <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+    <!-- Add meta tags -->
+    <drop theme="/html/head/meta" />
+    <after content="/html/head/meta" theme-children="/html/head" />
+
+        <!-- Copy style, script and link tags in the order they appear in the content -->
+        <after content="/html/head/style | /html/head/script | /html/head/link" theme-children="/html/head"/>
+
+    <!-- Title -->
+    <replace css:theme="title" css:content="title" />
+
+    <!-- Global navigation -->
+    <replace css:content-children='#portal-globalnav' css:theme-children='#hnavkont' />
+    <copy attributes="id class" css:content="#portal-globalnav" css:theme="#hnavkont" />
+
+    <!-- Suche -->
+    <replace css:content-children='#portal-searchbox' css:theme='#search-theme-form' />
+
+    <!-- Breadcrumps and Editbar -->
+    <replace css:content="#portal-breadcrumbs" css:theme="#blognav" />
+    <after css:content="#edit-bar" css:theme="#blognav" />
+
+    <!-- Personal Tools -->
+    <replace css:content="#portal-personaltools" css:theme="#adminBar" />
+
+    <!-- Content -->
+    <replace css:content="#content" css:theme="#content-area" />
+
+    <!-- Sidebars -->
+    <replace css:content="#portal-column-one" css:theme-children="#infobar" />
+
+</rules>

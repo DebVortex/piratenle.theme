@@ -1,0 +1,572 @@
+#main-content {
+    width:960px;
+    height:auto;
+    text-align:left;
+    background-color:#ff8800; 
+    padding-top: 1px;
+    margin:0 auto; 
+}
+
+#contentfeld {
+    background-color: #000;
+    padding-top: 5px;
+    width: 100%;
+    background: url(figs/faux_main_mid.png) repeat-y;
+    overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+}
+
+#blogticker, #infobar {
+    display: inline;
+    float: left;
+    padding: 0px 5px;
+}
+
+#blogticker {
+    margin-right: 5px;
+    width: 715px;
+}
+
+#infobar {
+    width: 220px;
+    font-size: 1.2em;
+}
+
+#portletHeader {
+    width: 220px;
+    text-align: center;
+}
+
+.navileiste {
+    margin-bottom: 10px;
+    padding-left: 0px;
+    border-bottom: 1px #ffcc88 solid;
+    height: 20px;
+}
+
+.navileiste #breadcrumbs-you-are-here {
+    font-size: 1em;
+    margin-bottom: -5pt;
+    color: #000;
+}
+
+.navileiste .nav-item a {
+    font-size: 12px;
+    margin-bottom: -5pt;
+    color: #ff8800;
+}
+
+ #portal-breadcrumbs > span {
+    font-size: 12px;
+    margin-bottom: -5pt;
+    color: #840;
+}
+
+.navileiste .nav-item a:hover {
+    color: #840;
+}
+
+.navileiste a.rssfeed {
+    float:right;
+    width:22px;
+    margin-top: -4px;
+    height:28px;
+    display:block;
+    background:url(figs/contkopf-rss.png) no-repeat left -116px; 
+}
+
+.navileiste a.rssfeed:hover {
+    float:right;
+    width:22px;
+    height:28px;
+    display:block;
+    background:url(figs/contkopf-rss.png) no-repeat left -34px; 
+}
+
+/****************************/
+/* Eigentliches Contentfeld */
+/****************************/
+
+.content-area {
+    margin: 1em 5px 1em 10px ;
+    font-size: 1.2em!important;
+    /* border: 1px #ffcc88 solid; */
+    padding: 1pt;
+}
+
+.content-area + .content-area {
+    margin: 2em 5px 2em 10px ;
+}
+
+.content-area_kat {
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    text-decoration: underline;
+    padding-left: .5em;
+    font-style: oblique;
+    color: #666;
+}
+
+.content-area_kat span.tip {
+    display: none;
+}
+
+.content-area_kat:hover span.tip {
+    display:block;
+    z-index:100;
+    font-style: normal;
+    font-size:80%;
+    width: 130pt;
+    margin-left:-25px;
+    position:absolute;
+    padding: 5px;
+    text-align:center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:#FFF;
+    background:rgba(0,0,0,0.85) ;
+}
+
+.content-area_kat:hover {
+    background: url(figs/tooltip_arrow.png) no-repeat 75px 8px;
+}
+
+.content-area a {
+    color: #272828;
+}
+
+.content-area a:hover {
+    color: #840;
+}
+
+.documentFirstHeading  {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .5em;
+    background-color: #D7D6CA;
+    padding: 2px 5px;
+}
+
+.documentDescription, .content-core {
+    padding: 0 5pt;
+}
+
+#content-core {
+    margin-bottom: 1em;
+}
+
+.documentDescription {
+    font-size: 120%;
+    color: #a0a0a0;
+    text-align: justify;
+    font-weight: bold;
+    margin: 1.5em 0 10px 0;
+}
+
+.content-area .documentDescription b {
+    color: #666;
+}
+
+ .weiter {
+   float: right; 
+   margin-bottom: 1em;
+   font-size: .8em;
+}
+
+ .weiter a{
+     font-weight: bold;
+     margin-left: .5em;
+     color: #555;
+}
+
+ .weiter a:hover {
+     font-weight: bold;
+     margin-left: .5em;
+     color: #840;
+}
+
+.plone-document-byline a {
+    color: #1D1C1D;
+}
+
+.documentDescription .weiter a:hover, .content-core a {
+    color: #E97213; !important
+}
+
+.content-core a:hover {
+    color: #840;        
+}
+
+.plone-document-byline {
+    font-size: .7em;
+    color: #666;
+    text-align: left;
+    margin: .5em .5em;
+}
+
+p + p {
+    margin-top: .5em;
+}
+
+.content-area b {
+    color: #272828;    
+}
+
+
+
+/*************/
+/* Kalender  */
+/*************/
+
+#cal {
+    width: 100%;
+    margin: 0;
+    clear: both;
+    padding-bottom: 20pt;
+}
+
+#calHeader {
+    text-align: center;
+}
+
+#Calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Calendar td,#Calendar tr {
+    border: 1px #cfcfcf solid;
+}
+
+#Calendar td {
+    height: 30px;
+    vertical-align: top;
+}
+
+#cal a {
+    color: #444;
+}
+
+#cal a:hover {
+    color: #a60;
+}
+
+#Calendar td.notthismonth a {
+    color: #a0a0a0;
+}
+
+div.day {
+    position: relative;
+    top: 2pt;
+    left: 2pt;
+    font-size: 10px;
+}
+
+#Calendar td .event {
+    display: none;
+}
+
+#Calendar .event > div + div {
+    margin-top: 2px;
+    clear: both;
+    padding-top: 2px;
+    border-top: 2px ridge #FFA640;
+}
+
+#Calendar td:hover .event {
+    display: block;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 10px;
+    width: 200px;
+    z-index: 99;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:#FFF;
+    background:rgba(0,0,0,0.85) ;
+}
+
+#Calendar .event .eventHeader a {
+    color: #FFA640;
+    font-weight: bold;
+}
+
+#Calendar .event .eventTimePlace {
+    text-style: italic;
+    text-indent: -2em;
+    padding-left: 2em;
+}
+
+.orange {
+    background-color: #FFC880;
+}
+
+.eventHeader a:hover {
+    text-decoration: underline;
+}
+
+#Calendar .event .eventDescription {
+    clear: both;
+    padding-top: 5px;
+}
+
+.event {
+}
+
+#calLegendeBody {
+    display: none;
+}
+
+#calLegende:hover #calLegendeBody  {
+    display: inline;
+}
+
+#calLegendeBody div.colcode {
+    width: 2.5em;
+    clear: both;
+    height: 1.5em;
+    margin-left: -3em;
+    margin-top: 1px;
+    float: left;
+}
+
+#calLegendeBody div.calLegDescription {
+    margin: 2px;
+    min-height: 1.5em;
+    padding-left: 3em;
+    color: #444;
+}
+
+#calLegendeBody .calLegInfo {
+    width: 100%;
+    clear: both;
+    margin-top: 5pt;    
+    color: #444;
+}
+
+#calLegende .calLegendeHeader {
+    font-weight: bold;
+    margin-top: 4px;
+    clear: both;
+    color: #555;
+    width: 100%;
+}
+
+#gotoCal {
+    float: right;
+    font-size: 12px;
+}
+
+/***********************/
+/* Wir Speichern nicht */
+/***********************/
+
+#wirspeichern {
+    margin-top: 15pt;
+}
+
+#wirspeichern .wsnLink {
+    margin-top: .5em;
+}
+
+#wirspeichern div.wsnLink a {
+    color: #333;
+    float: right;
+    font-weight: bold;
+}
+
+#wirspeichern div.wsnLink a:hover {
+    color: #840;
+}
+
+#wirspeichern .wsnImage {
+    float: left;
+}
+
+/********************************/
+/* Neues aus den Kreisverbänden */
+/********************************/
+
+#neuesKV {
+    width: 100%;
+    clear: both;
+    padding-bottom: 10pt;
+}
+
+.nkvHeader {
+    border-bottom: 1px #ffcc88 solid;
+    font-size: 1.4em;
+    margin: 5pt 0 10pt 0;
+    color: #ff8800;
+}
+
+.nkvBeitrag {
+    margin-bottom: 2em;
+    clear: both;
+}
+
+.nkvBeitrag_header {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .5em;
+    background-color: #D7D6CA;
+    padding: 2px 5px;    
+} 
+
+.nkvBeitrag_header  a:hover {
+    color: #840;
+}
+
+.nkvBeitrag_kv  a {
+    text-decoration: underline;
+    float: right;
+    padding: 1px 0 2px 5px;
+    color: #666;
+}
+
+.nkvBeitrag_kv  a:hover {
+    color: #840;
+}
+
+.nkvBeitrag_meta {
+    float: right;
+    color: #999;
+    font-size: 0.8em;
+}
+
+.nkvBeitrag_teaser {
+    color: #666;
+    text-align: justify;
+    margin: 2.5em 0 1em 0;    
+}
+
+ /*********************
+  * Customs for Plone *
+  *********************/
+
+.hiddenStructure, .searchSection {
+    display: none;
+}
+
+#edit-bar {
+    margin-top: 1.5em;
+    min-height: 2em;
+    background-color: #FFC880;
+    font-size: 1.2em;
+    border: 1px #cfcfcf solid;
+}
+
+#content-views li {
+    float: left;
+    margin: 5px;
+    text-align: left;
+}
+
+#contentActionMenus li {
+    float: right;
+    margin: 5px;
+    text-align: right;
+    background-color: #FFC880;    
+}
+#contentMenus li {
+    margin: 2px;
+}
+
+.actionMenuContent li {
+    clear: both;
+}
+
+.deactivated > .actionMenuContent {
+    display: none;
+}
+
+#content {
+    margin-top: 1.0em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+
+#content a {
+    color: #DD7700;
+}
+
+#content p {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+#content h1, #content h2, #content h3, #content h4 {
+    margin-top: 0.5em;
+    padding: 5px;
+}
+
+ /***********
+  * Sidebar *
+  ***********/
+
+.portlet {
+    width: 210px!important;
+    display: block;
+    border: 1px #cfcfcf solid;
+}
+
+.managePortletsLink {
+    border: 1px #cfcfcf solid;
+    padding: 3px;
+    background-color: #FFC880;
+    width: 204px!important; /* 6px less because of 3px padding */
+    text-align: center;
+    margin-top: 1em;
+}
+
+.portletHeader {
+    border: 1px #cfcfcf solid;
+    padding: 3px;
+    background-color: #FFC880!important;
+    text-align: center;
+    font-weight: bold;
+}
+
+.portletFooter {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.portletItem {
+    padding: 5px;
+    border-bottom: 1px #dfdfdf dotted;
+}
+
+.ploneCalendar td {
+    border: 1px #dfdfdf dotted;
+}
+
+.weekdays th {
+    background-color: #FFC880!important;
+}
+
+td.event {
+    background-color: #FFC880!important;   
+}
+
+#pb_1 {
+    background-color: #FFFFFF;
+    border: 1px #000000 solid;
+    padding: 3em;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+#LSResult {
+    background-color: #FFC880;
+    font-size: 1.2em;
+    border: 1px #ffffff solid;
+    padding: 0.25em;
+    text-align: left;
+    display: none;
+}

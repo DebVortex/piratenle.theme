@@ -1,0 +1,380 @@
+#portal-top {
+    width:960px;
+    height:150px;
+    margin:0 auto; 
+}
+
+/***************************/
+/* Bildchen der Startseite */
+/***************************/
+
+#actionarea {
+    width: 360px;
+    height: 180px;
+    float: left;
+}
+
+.coda-slider .panel-wrapper {
+    width: 360px;
+    height: 180px;
+    position: relative;
+    text-align:left; 
+}
+
+.coda-slider .panel {
+    height: 180px; 
+    width: 360px;
+}
+
+.coda-slider .panel-container {
+    height: 180px;
+    width: 360px;
+    position: absolute; 
+    left: 360px;
+    bottom: 0px;
+    background-color:rgba(0,0,0,0.6);
+}
+
+.coda-slider .panel-wrapper h2 {
+    color:#f3cf2d;
+    margin-top: 20px;
+    padding: 5px 10px 0 15px;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    text-shadow:3px 3px 7px #111; 
+}
+
+.coda-slider .panel-wrapper h1 {
+    color:#fff;
+    margin-top: 10px;
+    padding:0px 10px 0 15px;
+    font-size:1.5em;
+    text-shadow:3px 3px 7px #111; 
+}
+
+.coda-slider .panel-wrapper p {
+    color:#fff;
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 30px;
+    padding: 5px 10px 0 15px;
+    font-size:1.1em; 
+}
+
+.coda-slider .panel-wrapper a {
+    display:inline;
+    background:url(figs/slideratag_n.png) no-repeat center center; 
+}
+
+.coda-slider .panel-wrapper a:hover {
+    display:inline;
+    background:url(figs/slideratag_h.png) no-repeat center center; 
+}
+
+.coda-slider .panel-wrapper.slider1 {
+    background:url(figs/slideratag_n.png) no-repeat top left; 
+}
+
+.coda-slider .panel-wrapper.slider2 {
+    background:url(figs/slider2.jpg) no-repeat top left; 
+}
+
+.coda-slider .panel-wrapper.slider3 {
+    background:url(figs/slider3.jpg) no-repeat top left; 
+}
+
+.coda-slider .panel-wrapper.slider4 {
+    background:url(figs/slider4.jpg) no-repeat top left; 
+}
+
+/**************/
+/* Quicklinks */
+/**************/
+
+#quicklinks {
+    width: 240px;
+    height: 180px;
+    position: relative;
+    left: 720px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.25); /* Todo! */
+}
+
+#quicklinks > a { 
+    width: 240px; 
+    position: absolute; 
+    height: 60px; 
+    display: block; 
+    /* border: 1px rgba(0,0,0,0.15) solid;  */
+    border-collapse: collapse;
+}
+
+#quicklinks a span.quickHeader {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    padding: 0px 0px 0px 60px;
+    font-size: 1.6em;
+    line-height: 65px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    text-shadow:3px 3px 7px #CCC; 
+    color: white;
+    background:url(figs/hnavico-compass.png) no-repeat 0px 17px;
+}
+
+#quicklinks a span.quickDescription {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    text-align: left;
+    font-size: 10px;
+    text-shadow:2px 2px 2px #999; 
+    color: #333;
+    font-weight: bold;
+}
+
+#quicklinks > a:hover { background: rgba(0,0,0,0.05) }
+#q_spenden { top: 0px; background: #ff8800 url(figs/quickbg_rev.png) repeat-x 0 bottom; }
+#q_mitmachen { top: 60px; background-color: #ff8800; }
+#q_treff { top: 120px; background: #ff8800 url(figs/quickbg.png) repeat-x 0 top;}
+
+/*************/
+/* Admin-Bar */
+/*************/
+
+#portal-personaltools { position: fixed; background-color:rgba(0,0,0,0.5); color: white; width: 146px; padding: 2px; top: 0pt; right: 0pt; z-index: 99; text-align: left; font-size: 1.2em;}
+#portal-personaltools #user-name { font-weight: bold; padding: 2px; width: 142px; color: #ccc;}
+#portal-personaltools > .actionMenuHeader, #anon-personalbar {width: 142px; background-color:rgba(0,0,0,0.5);}
+#portal-personaltools a #user-name, #anon-personalbar a { color: #ccc;}
+#portal-personaltools div:hover > ul {  display: block;}
+#portal-personaltools > .actionMenuContent  li { padding: 2px; }
+#portal-personaltools > .actionMenuContent  a  { color: #ccc; font-size: 1.2em;}
+#portal-personaltools > .actionMenuContent  a:hover  { color: #f80; font-size: 1.2em;}
+
+/**************/
+/* Logo-Teil  */
+/**************/
+
+div#portal-header {
+    padding:0;
+    margin:0;
+    width:260px; 
+}
+	
+form#livesearch0 {
+    position: relative;
+    bottom: 100px;
+    width: 360px;
+    float:right;
+    right: 5px;
+    height: 0px;
+}
+
+form#livesearch0 input.searchButton {
+    position: relative;
+    width:80px;
+    height:27px;
+    text-align:right;
+    background-color: transparent;
+    color:#FFE1BF ;
+    font-size:1.1em;
+    text-transform:uppercase;
+    border-style:none;
+    float:left; 
+}
+
+form#livesearch0 input.searchField {
+    position: relative;
+    width:240px;
+    height:20px;
+    margin: 0 5px;
+    border:1px solid #c9792a;
+    background: #F69C00;
+    overflow:hidden; 
+    padding:4px 7px;
+    color:#9e4803;
+}
+
+form#livesearch0 input.searchField:focus, form#livesearch0 input.searchField:hover {
+    -webkit-box-shadow:0 0 3px 2px #FFB13A;
+    -moz-box-shadow: 0 0 3px 2px #FFB13A;
+    box-shadow: 0 0 3px 2px #FFEB3A;
+}
+
+div#pplogo {
+    /* height:95px; */
+    background: #FF8800 url();
+}
+
+#pplogo {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#pplogo a img {
+}
+
+ /**************/
+ /* Navigation */
+ /**************/
+
+#navigation {
+    width:960px;
+    height:auto;
+    clear: both;
+    margin:0 auto;
+    background: #ff8800 url(figs/hnavbg.png) repeat-x 0 top;
+}
+
+
+#navigation .navwrapper {
+    background:url(figs/navline-vert.png) repeat-y 0px top;
+}
+
+#navigation ul {
+    width:960px;
+    height:auto;
+    margin:0;
+}
+
+#navigation li {
+    width:240px;
+    height:auto;
+    float:left;
+    background: url(figs/navline-vert.png) no-repeat 0 top ;
+    background-size: 100% 50px;
+}
+
+#navigation ul#portal-globalnav li {
+    height:50px;
+}
+
+#navigation li.navhome {
+    width:39px;
+    height:50px;
+}
+
+#navigation li a {
+    height:50px;
+    display:block;
+}
+
+#navigation li.selected {
+    background-color: rgba(0,0,0,0.2);
+}
+
+#navigation li.navhome a.link {
+    width:39px;
+    height:40px;
+    background:url(figs/hnavico_home.png) no-repeat 8px 14px;
+}
+
+#navigation li.navhome a.link:hover {
+    width:39px;
+    height:40px;
+    background:url(figs/hnavico_home_h.png) no-repeat 8px 14px;
+}
+
+#navigation li a {
+    height:25px;
+    display:block;
+    position:relative;
+    top:18px;
+    text-align: center;
+    font-size:1.4em;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#fff;
+}
+
+#navigation li a:hover {
+    color:#863303;
+}
+
+#navigation ul#portal-globalnav li.clear,#navigation ul#subnavklapp li.clear {
+    width:960px;
+    height:1px;
+    clear:both;
+}
+
+#navigation ul#subnavklapp {
+    position:relative;
+    width:960px;
+}
+
+#navigation ul#subnavklapp li {
+    background:none;
+}
+
+#navigation ul#subnavklapp ul {
+    padding-bottom:6px;
+    list-style-type:none;
+}
+
+#navigation ul.subnav {
+    width:124px;
+    height:auto;
+    position:relative;
+    left:50px;
+    top:2px;
+    background:none;
+    border:none;
+}
+
+#navigation ul.subnav li {
+    width:auto;
+    height:auto;
+    text-align:left;
+    float:none;
+}
+
+#navigation ul.subnav li.extern {
+    background:url(figs/hnav-subpfeile.png) no-repeat 106px -38px;
+}
+
+#navigation ul.subnav li a {
+    width:115px;
+    height:18px;
+    display:block;
+    font-size:1.2em;
+    color:#fff;
+    padding-left:7px;
+    background:url(figs/hnav-subpfeile.png) no-repeat left 4px;
+}
+
+#navigation ul.subnav li a:hover {
+    color:#722d18;
+    background:url(figs/hnav-subpfeile.png) no-repeat left -17px;
+}
+
+#navigation .clear {
+    width:960px;
+    height:0px;
+}
+
+#navigation a#navklapbut {
+    display:block;
+    width:39px;
+    height:12px;
+    display:block;
+    border-style:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+#navigation a.down {
+    background:transparent url(figs/navdown.png) no-repeat center center;
+}
+
+#navigation a.up {
+    background:transparent url(figs/navup.png) no-repeat center center;
+}
+
+#navigation a.down:hover {
+    background:transparent url(figs/navdown_h.png) no-repeat center center;
+}
+
+#navigation a.up:hover {
+    background:transparent url(figs/navup_h.png) no-repeat center center;
+}
